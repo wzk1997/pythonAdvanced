@@ -19,5 +19,14 @@ print(isinstance(tp,Iterator))
 print(isinstance(dic,Iterator))
 print(isinstance(STR,Iterator))
 print(isinstance(INT,Iterator))
-
+g=(X for X in range(10))
+print(isinstance(g,Iterable))
+print(isinstance(g,Iterator))
+while True:
+    try:
+        r=next(g)
+        print(r)
+    except StopIteration as e:
+        print(e)
+        break
 

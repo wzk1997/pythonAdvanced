@@ -1,4 +1,10 @@
 print("你好呀")
+"""
+属性:是对 对像特性的描述
+方法： 是对
+
+
+"""
 class Person():
     name="wzk"
     def __init__(self,_age):
